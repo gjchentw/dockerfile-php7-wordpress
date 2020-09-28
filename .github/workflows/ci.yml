@@ -19,4 +19,4 @@ jobs:
     - name: Login to ghcr.io
       run: echo ${{ secrets.CR_PAT }} | docker login ghcr.io -u ${GITHUB_ACTOR} --password-stdin
     - name: Push to ghcr.io
-      run: "docker push ${{ secrets.CR_REPO }}:$(cat Dockerfile | grep PHP= | awk -F= '{print $(NF)}')"
+      run: "docker push ghcr.io/gjchentw/php7:wordpress"
