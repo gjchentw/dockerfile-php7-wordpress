@@ -1,9 +1,9 @@
 FROM	ghcr.io/gjchentw/php7:7.4
 
 ENV	TZ="Asia/Taipei" \
-	APP="/app" \
+	APP="/app/wordpress" \
 	NGINX_SERVER_TPL="/etc/nginx/conf.d/default.template" \
-	PHPFPM_DISABLE_EXT="mongodb intl soap phar ldap imap imap interbase gmp odbc dba tidy sqlite3 snmp pdo_firebird pdo_dblib pdo_odbc pdo_sqlite readline wddx pdo_firebird calendar bcmath enchant pspell ctype" \
+	PHPFPM_DISABLE_EXT="mongodb intl soap phar ldap imap imap interbase gmp odbc dba tidy snmp pdo_firebird pdo_dblib pdo_odbc readline wddx pdo_firebird calendar bcmath enchant pspell ctype" \
 	PHP_ERROR_LOG=syslog \
 	PHP_LOG_ERRORS=1 \
 	PHP_DISPLAY_ERRORS="" \
